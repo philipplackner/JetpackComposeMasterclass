@@ -43,10 +43,11 @@ fun LazyListPerformance(modifier: Modifier = Modifier) {
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
+                    val highestVal = myList.maxOf { it.id }
                     myList = listOf(MyListItem(
-                        id = myList.lastIndex + 1,
-                        title = "List item ${myList.lastIndex + 1}",
-                        description = "Description ${myList.lastIndex + 1}",
+                        id = highestVal + 1,
+                        title = "List item ${highestVal + 1}",
+                        description = "Description ${highestVal + 1}",
                     )) + myList
                 }
             ) {
