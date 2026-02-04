@@ -122,7 +122,7 @@ fun SharedTransitionScope.RowListItem(
             modifier = Modifier
                 .size(100.dp)
                 .sharedElement(
-                    state = rememberSharedContentState("image"),
+                    sharedContentState = rememberSharedContentState("image"),
                     animatedVisibilityScope = animatedVisibilityScope
                 )
         )
@@ -137,7 +137,7 @@ fun SharedTransitionScope.RowListItem(
                 fontSize = 20.sp,
                 modifier = Modifier
                     .sharedElement(
-                        state = rememberSharedContentState("title"),
+                        sharedContentState = rememberSharedContentState("title"),
                         animatedVisibilityScope = animatedVisibilityScope
                     )
             )
@@ -146,7 +146,7 @@ fun SharedTransitionScope.RowListItem(
                 fontSize = 14.sp,
                 modifier = Modifier
                     .sharedElement(
-                        state = rememberSharedContentState("description"),
+                        sharedContentState = rememberSharedContentState("description"),
                         animatedVisibilityScope = animatedVisibilityScope
                     )
             )
@@ -175,7 +175,7 @@ fun SharedTransitionScope.ColumnListItem(
             modifier = Modifier
                 .size(250.dp)
                 .sharedElement(
-                    state = rememberSharedContentState("image"),
+                    sharedContentState = rememberSharedContentState("image"),
                     animatedVisibilityScope = animatedVisibilityScope
                 )
         )
@@ -184,7 +184,7 @@ fun SharedTransitionScope.ColumnListItem(
             fontSize = 20.sp,
             modifier = Modifier
                 .sharedElement(
-                    state = rememberSharedContentState("title"),
+                    sharedContentState = rememberSharedContentState("title"),
                     animatedVisibilityScope = animatedVisibilityScope
                 )
         )
@@ -193,7 +193,7 @@ fun SharedTransitionScope.ColumnListItem(
             fontSize = 14.sp,
             modifier = Modifier
                 .sharedElement(
-                    state = rememberSharedContentState("description"),
+                    sharedContentState = rememberSharedContentState("description"),
                     animatedVisibilityScope = animatedVisibilityScope
                 )
         )
